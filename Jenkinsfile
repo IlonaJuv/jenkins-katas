@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Say Hello') {
+    stage('Paraller execution') {
       parallel {
-        stage('Parallel execution') {
+        stage('Say Hello') {
           steps {
             sh 'echo "Hello world"'
           }
